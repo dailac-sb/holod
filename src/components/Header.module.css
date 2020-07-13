@@ -1,0 +1,57 @@
+.header {
+  grid-area: h;
+  background-color: #59341F;
+  margin-bottom: 2px;
+  color: #E4C9B9;
+  font-size: 18px;
+}
+
+.header a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #E4C9B9;
+}
+
+.header table {
+  width: 100%;
+}
+
+.header table .logo {
+  width: 60px;
+}
+
+.header table .name {
+  width: 150px;
+}
+
+.header table .search {
+  width: 150px;
+}
+
+.header table .menu {
+  width: auto;
+  text-align: center;
+}
+
+.header ul {
+  list-style-type: none;
+  padding-left: 20px;
+
+}
+
+.header ul li {
+  padding-bottom: 8px;
+  padding-left: 10px;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.header table .login {
+  width: 100px;
+  text-align: center;
+}
+
+.header img {
+  width: 40px;
+  margin: 7px;
+}

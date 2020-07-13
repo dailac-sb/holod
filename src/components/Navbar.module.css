@@ -1,0 +1,24 @@
+.nav {
+  grid-area: nv;
+  background-color: #DCBFAF;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.nav ul li {
+  padding-bottom: 8px;
+  font-size: 18px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #100701;
+}
+
+.nav a:active, .nav a:hover {
+  font-weight: 900;
+}
