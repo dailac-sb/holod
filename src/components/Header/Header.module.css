@@ -12,8 +12,9 @@ a {
 
 table {
   width: 100%;
+  border-collapse: collapse;
 }
 
 img {
-  width: 52px;
+  width: 60px;
 }

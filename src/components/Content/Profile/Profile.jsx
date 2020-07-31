@@ -1,17 +1,17 @@
 import React from "react";
 import s from "./Profile.module.css";
+import MyRecipes from "./MyRecipes/MyRecipes";
+import MyNews from "./MyNews/MyNews";
+import Sub from "./MySub/Sub";
+import Personal from "./Personal/Personal";
 
 const Profile = () => {
     return (
         <div>
-            <img className={s.title_profile}
-                 src="https://avatars.mds.yandex.net/get-pdb/1822443/efedf570-1e49-41ca-b2f1-e30625326a53/s1200?webp=false"
-                 alt="title"/>
-            <div>avatar + description</div>
-            <div>My status</div>
-            <div>My recipes</div>
-            <div>My posts</div>
-            <div>Subscriptions and subscribers</div>
+            <Personal/>
+            <MyRecipes/>
+            <MyNews/>
+            <Sub/>
         </div>
     );
 };

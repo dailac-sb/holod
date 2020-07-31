@@ -1,0 +1,9 @@
+.message {
+    width: auto;
+    border-left: 1px solid #59341F;
+}
+
+.dialogs {
+    width: 25%;
+    vertical-align: top;
+}

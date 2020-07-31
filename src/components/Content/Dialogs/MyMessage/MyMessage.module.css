@@ -1,0 +1,18 @@
+.message {
+    border-radius: 5px;
+    background: lightgray;
+    width: max-content;
+    padding: 10px;
+        margin: 10px 10px 10px auto;
+}
+
+.text {
+    text-align: left;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.time {
+    font-size: 10px;
+    text-align: right;
+}
