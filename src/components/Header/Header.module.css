@@ -1,0 +1,19 @@
+.header {
+  grid-area: h;
+  background-color: #59341F;
+  color: #E4C9B9;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #E4C9B9;
+}
+
+table {
+  width: 100%;
+}
+
+img {
+  width: 52px;
+}

@@ -1,0 +1,17 @@
+.navbar {
+  width: auto;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+  margin: 0;
+
+}
+
+ul li {
+  padding-left: 10px;
+  font-size: 18px;
+  display: inline-block;
+}
