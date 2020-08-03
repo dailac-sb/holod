@@ -1,7 +1,7 @@
 import React from "react";
-import s from "./NewsFeed.module.css";
-import Post from "../../Items/Posts/Post/Post";
-import NewPost from "../../Items/Posts/NewPost/NewPost";
+import s from "./MyPosts.module.css";
+import Post from "../../../Items/Posts/Post/Post";
+
 
 let postData = [
     {
@@ -18,15 +18,7 @@ let postData = [
         pic: 'https://avatars.mds.yandex.net/get-pdb/1491599/5627e8e4-79e0-4ffd-835f-f5a2c8f8a6a3/s1200?webp=false'
     },
     {
-        id: 3,
-        article: 'Кис кис кис',
-        body: 'Веселая кошка все время говорит мяу, а чтоб позвать кошку нажно что произнести?',
-        likes: 65,
-        author: 'Kathrin',
-        pic: 'https://zagge.ru/wp-content/uploads/2019/06/aHR0cDovL3d3dy5saXZlc2N.jpg'
-    },
-    {
-        id: 2,
+        id: 1,
         article: 'Охота за красивым фото',
         body: 'Снова началась жара, солнце больше не закрывали тучи и утренняя прохлада, вызванная проходом ' +
             'холодного циклона, больше не радовала. Несмотря на сильный ветер и ночной дождь, грозящий срыву ' +
@@ -39,32 +31,31 @@ let postData = [
         pic: 'https://yandex.ru/images/_crpd/85tMkop74/456e9bxj3mL/Um_RQgo5HuW-eeRR5uGVbHTB_FJFVW8ORnq5ivzZJ6lyb' +
             '-m2xNXcnQsKgLPh1bo_kKajd306J32WlBGXYNwpDxcqFxFf6N80Pqk113A1Qnsm1SvHU9a9zUMo68t-mPWivKcyKp6LxgEXkwqj' +
             '9UK6fhchNKcm4M'
-    },
-    {
-        id: 3,
-        article: 'Кис кис кис',
-        body: 'Веселая кошка все время говорит мяу, а чтоб позвать кошку нажно что произнести?',
-        likes: 65,
-        author: 'Kathrin',
-        pic: 'https://zagge.ru/wp-content/uploads/2019/06/aHR0cDovL3d3dy5saXZlc2N.jpg'
-    },
+    }
 ];
 
-let post = postData.map ( p => (
-    <Post id={p.id} article={p.article} body={p.body} likes={p.likes} author={p.author} pic={p.pic} />
-))
-
-
-const NewsFeed = () => {
+const MyPosts = () => {
     return (
         <div>
-            <NewPost/>
             <div className={s.postArea}>
-                    {post}
+                <Post
+                    article={postData[0].article}
+                    body={postData[0].body}
+                    likes={postData[0].likes}
+                    author={postData[0].author}
+                    pic={postData[0].pic}
+                />
+                <Post
+                    article={postData[1].article}
+                    body={postData[1].body}
+                    likes={postData[1].likes}
+                    author={postData[1].author}
+                    pic={postData[1].pic}
+                />
+
             </div>
         </div>
     );
 };
 
-
-export default NewsFeed
+export default MyPosts

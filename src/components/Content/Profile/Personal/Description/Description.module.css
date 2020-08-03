@@ -1,5 +1,8 @@
 .info {
-    margin: 5px 15px;
-    font-size: 20px;
-    font-weight: 700;
+    margin: 10px;
+}
+
+.name {
+    font-style: italic;
+    font-size: 22px;
 }

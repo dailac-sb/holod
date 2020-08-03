@@ -1,10 +1,10 @@
 import React from "react";
 import s from "./Status.module.css";
 
-const Status = () => {
+const Status = (props) => {
     return (
-        <div>
-            status
+        <div className={s.status}>
+            {props.status}
         </div>
     );
 };

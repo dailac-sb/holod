@@ -1,0 +1,8 @@
+.head {
+    padding: 0 0 10px 10px;
+}
+
+.sBlock {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px 150px;
+}

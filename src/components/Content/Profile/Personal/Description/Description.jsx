@@ -4,7 +4,7 @@ import s from "./Description.module.css";
 const Description = (props) => {
     return (
         <div>
-            <div className={s.info}>
+            <div className={s.info + ' ' + s.name}>
                 {props.firstName} {props.lastName}
             </div>
             <div className={s.info}>

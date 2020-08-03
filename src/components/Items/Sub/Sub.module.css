@@ -1,0 +1,19 @@
+.avatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.sabBlock {
+    display: block;
+    margin: auto;
+    width: 130px;
+    text-align: center;
+}
+
+.nick {
+    text-align: center;
+    font-size: 14px;
+    height: 50px;
+}

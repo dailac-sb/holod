@@ -1,8 +1,23 @@
+.personal {
+    display: grid;
+    grid-template-areas: "t t" "a d";
+    grid-template-rows: 250px 1fr;
+    grid-template-columns: 220px 1fr;
+}
+
+.titles {
+    grid-area: t;
+
+}
+
 .avatar {
+    grid-area: a;
     width: 200px;
+    padding-left:20px;
 }
 
 .description {
+    grid-area: d;
     padding: 5px;
     vertical-align: top;
 }

@@ -5,5 +5,9 @@
     padding: 10px;
     margin: 10px;
     color: #E4C9B9;
+    display: block;
 }
 
+a.active {
+    background: chocolate;
+}

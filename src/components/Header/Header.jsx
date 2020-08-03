@@ -9,25 +9,21 @@ import Login from "./Login/Login";
 const Header = () => {
     return (
         <header className={s.header}>
-            <table>
-                <tr>
-                    <td>
-                        <Logo/>
-                    </td>
-                    <td>
-                        <Name/>
-                    </td>
-                    <td>
-                        <Navbar/>
-                    </td>
-                    <td>
-                        <Search/>
-                    </td>
-                    <td>
-                        <Login/>
-                    </td>
-                </tr>
-            </table>
+            <div>
+                <Logo/>
+            </div>
+            <div>
+                <Name/>
+            </div>
+            <div>
+                <Navbar/>
+            </div>
+            <div>
+                <Search/>
+            </div>
+            <div>
+                <Login/>
+            </div>
         </header>
     );
 };
