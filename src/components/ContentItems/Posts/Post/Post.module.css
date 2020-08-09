@@ -2,7 +2,8 @@
     display: block;
     margin: 5px;
     height: 450px;
-    border: 1px solid #E4C9B9;
+    border: 1px solid #59341F;
+    border-radius: 5px;
     background: #ffffff;
 }
 
@@ -46,7 +47,7 @@
     position: absolute;
     top: 427px;
     left: 0px;
-    background: antiquewhite;
+    background: white;
     padding: 2px;
 }
 
@@ -55,6 +56,6 @@
     position: absolute;
     top: 427px;
     right: 0px;
-    background: antiquewhite;
+    background: white;
     padding: 2px;
 }

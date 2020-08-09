@@ -9,18 +9,28 @@ import NewsFeed from "./components/Content/NewsFeed/NewsFeed";
 import Recipes from "./components/Content/Recipes/Recipes";
 import Favorites from "./components/Content/Favorites/Favorites";
 
-const App = () => {
+const App = (props) => {
     return (
         <BrowserRouter>
             <div className='app-wrapper'>
                 <Header/>
                 <div className='app-wrapper-content'>
-                    <Route path='/home' component={Home}/>
-                    <Route path='/profile' component={Profile}/>
-                    <Route path='/recipes' component={Recipes}/>
-                    <Route path='/news' component={NewsFeed}/>
-                    <Route path='/dialogs' component={Dialogs}/>
-                    <Route path='/favorites' component={Favorites}/>
+                    <Route exact path='/' render={() => <Home/>}/>
+                    <Route path='/profile' render={() => <Profile
+                        profile={props.profile}
+                        subscription={props.subscription}
+                        subscribers={props.subscribers}
+                        myPostData={props.myPostData}
+                    />}/>
+                    <Route path='/recipes' render={() => <Recipes/>}/>
+                    <Route path='/news' render={() => <NewsFeed
+                        postDataNews={props.postDataNews}
+                    />}/>
+                    <Route path='/dialogs' render={() => <Dialogs
+                        dialogData={props.dialogData}
+                        messageData={props.messageData}
+                    />}/>
+                    <Route path='/favorites' render={() => <Favorites/>}/>
                 </div>
             </div>
         </BrowserRouter>

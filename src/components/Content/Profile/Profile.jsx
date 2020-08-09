@@ -5,13 +5,16 @@ import MyPosts from "./MyPosts/MyPosts";
 import Subs from "./MySub/Subs";
 import Personal from "./Personal/Personal";
 
-const Profile = () => {
+const Profile = (props) => {
     return (
         <div>
-            <Personal/>
-            <Subs/>
+            <Personal profile={props.profile}/>
+            <Subs
+                subscription={props.subscription}
+                subscribers={props.subscribers}
+            />
             <MyRecipes/>
-            <MyPosts/>
+            <MyPosts myPostData={props.myPostData}/>
         </div>
     );
 };
