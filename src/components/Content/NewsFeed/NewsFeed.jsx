@@ -5,7 +5,7 @@ import NewPost from "../../ContentItems/Posts/NewPost/NewPost";
 
 const NewsFeed = (props) => {
 
-    let post = props.postDataNews.map(p => (
+    let post = props.newsData.postData.map(p => (
         <Post id={p.id} article={p.article} body={p.body} likes={p.likes} author={p.author} pic={p.pic}/>
     ))
 

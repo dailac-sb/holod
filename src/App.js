@@ -16,20 +16,10 @@ const App = (props) => {
                 <Header/>
                 <div className='app-wrapper-content'>
                     <Route exact path='/' render={() => <Home/>}/>
-                    <Route path='/profile' render={() => <Profile
-                        profile={props.profile}
-                        subscription={props.subscription}
-                        subscribers={props.subscribers}
-                        myPostData={props.myPostData}
-                    />}/>
+                    <Route path='/profile' render={() => <Profile profileData={props.state.profileData}/>}/>
                     <Route path='/recipes' render={() => <Recipes/>}/>
-                    <Route path='/news' render={() => <NewsFeed
-                        postDataNews={props.postDataNews}
-                    />}/>
-                    <Route path='/dialogs' render={() => <Dialogs
-                        dialogData={props.dialogData}
-                        messageData={props.messageData}
-                    />}/>
+                    <Route path='/news' render={() => <NewsFeed newsData={props.state.newsData}/>}/>
+                    <Route path='/dialogs' render={() => <Dialogs dialogsData={props.state.dialogsData}/>}/>
                     <Route path='/favorites' render={() => <Favorites/>}/>
                 </div>
             </div>

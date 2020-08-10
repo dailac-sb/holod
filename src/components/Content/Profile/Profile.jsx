@@ -8,13 +8,13 @@ import Personal from "./Personal/Personal";
 const Profile = (props) => {
     return (
         <div>
-            <Personal profile={props.profile}/>
+            <Personal profile={props.profileData.profile}/>
             <Subs
-                subscription={props.subscription}
-                subscribers={props.subscribers}
+                subscription={props.profileData.subscription}
+                subscribers={props.profileData.subscribers}
             />
             <MyRecipes/>
-            <MyPosts myPostData={props.myPostData}/>
+            <MyPosts myPostData={props.profileData.myPostData}/>
         </div>
     );
 };

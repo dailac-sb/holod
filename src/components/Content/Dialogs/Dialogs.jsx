@@ -6,9 +6,9 @@ import DialogItem from "./DialogItem/DialogItem";
 
 const Dialogs = (props) => {
 
-    let dialogs = props.dialogData.map(d => <DialogItem nickName={d.nick} idName={d.idPersonal}/>);
+    let dialogs = props.dialogsData.dialogs.map(d => <DialogItem nickName={d.nick} idName={d.idPersonal}/>);
 
-    let messages = props.messageData.map(m => m.idPersonal === 10000001 ?
+    let messages = props.dialogsData.messageData.map(m => m.idPersonal === 10000001 ?
         <Message message={m.message} date={m.date}/> :
         <MyMessage message={m.message} date={m.date}/>
     )
