@@ -6,8 +6,10 @@
     margin: 10px;
     color: #E4C9B9;
     display: block;
+    border: #59341F solid 1px;
 }
 
 a.active {
-    background: chocolate;
+    background: #E4C9B9;
+    color: #59341F;
 }

@@ -1,3 +1,5 @@
+import {rerenderEntireTree} from "../render";
+
 let state = {
     profileData: {
         profile: {
@@ -81,39 +83,39 @@ let state = {
     dialogsData: {
         dialogs: [
             {
-                idPersonal: 10000001,
+                idPersonal: 10000002,
                 nick: 'Kathrin',
             },
             {
-                idPersonal: 10000002,
+                idPersonal: 10000003,
                 nick: 'Bychkov Max',
             },
             {
-                idPersonal: 10000003,
+                idPersonal: 10000004,
                 nick: 'Kristian',
             },
             {
-                idPersonal: 10000004,
+                idPersonal: 10000005,
                 nick: 'Человек Мужик',
             },
             {
-                idPersonal: 10000005,
+                idPersonal: 10000006,
                 nick: 'Леха Борода',
             }
         ],
         messageData: [
             {
-                idPersonal: 10000001,
+                idPersonal: 10000002,
                 message: 'Привет, как дела?',
                 date: '21.07.20 10:55',
             },
             {
-                idPersonal: 10000002,
+                idPersonal: 10000001,
                 message: 'Привет, супер продолжаем монтаж. Погода огонь!',
                 date: '21.07.20 10:58',
             },
             {
-                idPersonal: 10000001,
+                idPersonal: 10000002,
                 message: 'Когда планируешь домой?',
                 date: '22.07.20 6:23',
             },
@@ -167,6 +169,16 @@ let state = {
             },
         ]
     }
+}
+
+export let addMessage = (postMessage) => {
+    let newPost = {
+        idPersonal: 10000001,
+        message: postMessage,
+        date: Date()
+    };
+    state.dialogsData.messageData.push(newPost);
+    rerenderEntireTree(state);
 }
 
 export default state

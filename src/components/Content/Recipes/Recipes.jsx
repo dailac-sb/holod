@@ -6,6 +6,7 @@ const Recipes = () => {
     return (
         <div>
             Recipes
+            {/*TODO: Сделать блок рецепта*/}
         </div>
     );
 };

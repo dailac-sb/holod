@@ -8,6 +8,7 @@ const Post = (props) => {
         <div className={s.postBlock}>
             <div className={s.postImg}>
                 <img className={s.postPic} src={props.pic} alt=""/>
+                {/* TODO: Сдлеать градиент или вставить картинку fonPost.png поверх img*/}
                 <div className={s.postArticle}><h3>{props.article}</h3></div>
                 <div className={s.postBody}>{props.body}</div>
                 <div className={s.postLikes}>{props.likes} Likes</div>

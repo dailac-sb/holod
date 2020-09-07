@@ -5,8 +5,8 @@ const Search = () => {
 
     return (
         <div className={s.search}>
-            <input type="text"/>
-            <button>Поиск</button>
+            <input className={s.input} type="text"/>
+            <button className={s.button}>Поиск</button>
         </div>
     );
 };

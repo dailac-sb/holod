@@ -6,6 +6,7 @@ const Home = () => {
     return (
         <div>
             Home
+            {/*TODO: создание главной страницы*/}
         </div>
     );
 };
